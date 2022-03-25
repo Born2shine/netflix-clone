@@ -1,0 +1,84 @@
+// Color Variables
+$dark-clr: #0e0e0e;
+$dark-clr-1: #141414;
+$dark-clr-2: #181818;
+$dark-off: #b1afaf;
+$white-clr: #fff;
+$tomato-clr: #e50914;
+$blue-clr: #0071eb;
+$blue-1: #1876f2;
+$dark-1: #2c2c2c;
+$dark-2: #757575;
+$dark-3: #8c8c8c;
+$dark-4: #737373;
+$dark-5: #242323;
+$orange-clr: #e87c03;
+$green-clr: #36e954;
+$radius: 5px;
+$transition: 0.4s ease all;
+$font-family-1: Arial, Helvetica, sans-serif;
+
+// Breakpoints
+$xs: 320px;
+$sm: 540px;
+$md: 740px;
+$lg: 885px;
+$xl: 1200px;
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .displayBlock{
+      display: block !important;
+  }
+  .fixedNavbar{
+     background: $dark-clr !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+
+.btn{
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: $radius;
+    font-family: inherit;
+    color: $white-clr;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-login{
+    background: $tomato-clr;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: $transition;
+    &:hover{
+        background: darken($tomato-clr, 10%);
+    }
+}
+.btn-fb-login{
+    background: $blue-1;
+    color: $white-clr;
+    &:hover{
+        background: lighten($blue-1, 20%);
+    }
+}
+.btn-guest-login{
+    background: none;
+    border: 1px solid $dark-3;
+    border-radius: $radius;
+    outline: none;
+    color: $white-clr;
+    transition: $transition;
+    &:hover{
+        border: 1px solid $tomato-clr;
+        color: $tomato-clr;
+    }
+}
+.mb-2{
+    margin-bottom: 10px !important;
+}
+
+// background: linear-gradient(to top,#181818,transparent 50%);
