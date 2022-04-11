@@ -22,6 +22,7 @@ function Hero() {
 
     const dispatch = useDispatch()
     const slug = useSelector((state) => state.slug)
+    const banner = useSelector((state) => state.movies.genre)
     
     // handle clickOutside event for navbar
     const hanldeClickOutside = (event) => {
@@ -48,8 +49,28 @@ function Hero() {
         return () => document.removeEventListener('mousedown', (event) => hanldeClickOutside(event))
     }, [pageYOffset]);
 
-  return (
-    <div className='hero'>
+    // const img_url = `https://image.tmdb.org/t/p/w500`
+    // let randomBanner = banner[Math.floor(Math.random() * banner.length ) + 0]
+    // if(randomBanner){
+    //     randomBanner = randomBanner.movies
+    //     randomBanner = randomBanner[Math.floor(Math.random() * randomBanner.length ) + 0]
+    // }
+    // const bigBanner = randomBanner.movies[Math.floor(Math.random() * randomBanner.movies.length ) + 0]
+
+    // console.log(randomBanner)
+
+  return ( 
+    <div className='hero' 
+    // style={randomBanner && 
+    //     {
+    //         backgroundImage: "url(" + img_url + randomBanner.poster_path + ")",
+    //         height: "100vh",
+    //         backgroundPosition: 'center',
+    //         backgroundSize: 'cover',
+    //         backgroundRepeat: 'no-repeat'
+    //     }
+    // }
+    >
             <nav className={pageYOffset > 20 ? 'fixedNavbar' : '' }>
                 <div className='left'>
                     <div className='logo'>

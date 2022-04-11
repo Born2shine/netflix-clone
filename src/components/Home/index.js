@@ -16,10 +16,10 @@ function index() {
         <Hero/>  
         <div className='movies-wrapper'>
             <Category/>
+            {/* <Category/>
             <Category/>
             <Category/>
-            <Category/>
-            <Category/>
+            <Category/> */}
         </div>
         <footer className='designed-by'> Designed with <span className='heart'>❤</span> by Odoh Friday </footer>
     </section>  
