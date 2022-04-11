@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import axios from 'axios'
 
 import Movie_img from "../../assets/images/movie-img.jpg"
-import Movie_img_1 from "../../assets/images/movie-img-1.jpg"
+// import Movie_img_1 from "../../assets/images/movie-img-1.jpg"
 
 import { setWindowSize, toggleMovieModal } from '../../store/slug-actions'
 import { MovieActions } from '../../store/movies-slice'
