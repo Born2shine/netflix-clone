@@ -12,7 +12,7 @@ import Avatar_1 from "../../assets/images/avatar_1.png"
 import Avatar_2 from "../../assets/images/avatar_2.png"
 import Avatar_3 from "../../assets/images/kids_avatar.png"
 import { useDispatch, useSelector } from 'react-redux'
-import { closeNavbarHandler, toggleMenuBar, toggleProfileHandler } from '../../store/slug-actions'
+import { closeNavbarHandler, toggleMenuBar, toggleProfileHandler } from '../../store/slugs/slug-actions'
 
 function Hero() {
     const [pageYOffset, setPageYOffset] = useState(0)

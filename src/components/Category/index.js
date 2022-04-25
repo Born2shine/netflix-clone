@@ -15,8 +15,9 @@ import axios from 'axios'
 import Movie_img from "../../assets/images/movie-img.jpg"
 // import Movie_img_1 from "../../assets/images/movie-img-1.jpg"
 
-import { setWindowSize, toggleMovieModal } from '../../store/slug-actions'
-import { MovieActions } from '../../store/movies-slice'
+import { setWindowSize, toggleMovieModal } from '../../store/slugs/slug-actions'
+import { MovieActions } from '../../store/movies/movies-slice'
+import { capitalize } from '../../utils/helpers/capitalize'
 
 
 const Category = () => {
@@ -135,26 +136,6 @@ const Category = () => {
         .catch(error => {
             console.log(error)
         })
-    }
-
-    // const fetchMovies = async () => {
-    //     const res = await axios
-    //     .get(TRENDING_URL)
-    //     .catch((err) => {
-    //         console.log("Error", err)
-    //     })
-    //     dispatch(
-    //         MovieActions.getMovies({
-    //             title: 'trending',
-    //             movies: res.data.results
-    //         })
-    //     )
-    //     // console.log(res.data.results)
-    // }
-
-    const capitalize = (word) => {
-        return word === 'sci_fi' ? 'Science Fiction' :
-        word.slice(0,1).toUpperCase() + word.slice(1, word.length).toLowerCase()
     }
 
     useEffect(() =>{
